@@ -1,0 +1,142 @@
+body{
+  background-color: rgb(44, 40, 40);
+  padding:0;
+  margin: 0;
+  overflow-y:auto
+}
+
+nav{
+  background-color: lightgreen;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+
+nav li{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+ 
+}
+
+nav ul{
+  
+  height: 70px;
+  color: rgb(13, 24, 24);
+  display: flex;
+  list-style: none;
+  padding:0 10px
+  
+  
+}
+
+
+.brand{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.brand img{
+   height: 40px;
+   margin-bottom: 0px;
+}
+
+#name{
+  font: 100px;;
+  font:italic;
+  font-size: 26px
+}
+
+h1{
+  color: white;
+}
+
+.container{
+height: 75%;
+background-image: url("https://esports.as.com/2017/09/25/league-of-legends/cancion-Legends-Never-Die-Mundial_1066403360_205187_1440x810.jpg");
+margin-top: 0px;
+}
+
+#play{
+  background-color: black;
+  height: 95px;
+  
+}
+
+i{
+  color: white;
+  cursor: pointer;
+  size: 1;
+}
+
+#play{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#progressbar{
+
+  width:70%
+  
+}
+
+#play{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+#icons{
+  margin-top: 6px;
+}
+
+.songs{
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 17px;
+  display: flex;
+  flex-direction:row;
+  background-color: lightgreen;
+  height: 50px;
+  width:400px
+  
+  
+}
+
+.songs img{
+  width: 100px;
+  height: 50px;
+  
+}
+
+h3{
+  color: white;
+  
+}
+
+#song1{
+  border-radius: 20px;
+}
+
+.songs h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+#backgrounddiv{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+#songname{
+  color:white;
+}
+
+
