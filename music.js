@@ -11,6 +11,7 @@ let song4=document.getElementById('song4');
 let song5=document.getElementById('song5');
 let song6=document.getElementById('song6');
 let song7=document.getElementById('song7');
+let container=document.getElementsByClassName('container')
 
 
 let audioelement1=new Audio("one.mp3.mp3") ;
@@ -87,12 +88,19 @@ song1.addEventListener('click', ()=>{
     
   if(audioelement1.paused|| flag==0){
    audioelement1.play(); 
+   
    flag=1;
    masterplay.classList.remove("fa-play");
    masterplay.classList.add("fa-pause");
    songname.innerText="legends never die"
+   audioelement2.pause();
+   audioelement3.pause();
+   audioelement4.pause();
+   audioelement5.pause();
+   audioelement6.pause();
+   audioelement7.pause();
    
-
+   container[0].style.backgroundImage="url('https://esports.as.com/2017/09/25/league-of-legends/cancion-Legends-Never-Die-Mundial_1066403360_205187_1440x810.jpg')"
   }
    
  else {audioelement1.pause();
@@ -113,11 +121,20 @@ song1.addEventListener('click', ()=>{
     
     if(audioelement2.paused|| flag==0){
      audioelement2.play(); 
+     
      flag=1;
      masterplay.classList.remove("fa-play");
      masterplay.classList.add("fa-pause");
      songname.innerText="Faded"
-  
+     
+     audioelement1.pause();
+   audioelement3.pause();
+   audioelement4.pause();
+   audioelement5.pause();
+   audioelement6.pause();
+   audioelement7.pause();
+   container[0].style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCL6nHRv-5XRaicmNfM9deudGLm78niEANXw&usqp=CAU')"
+   
     }
      
    else {audioelement2.pause();
@@ -141,7 +158,13 @@ song1.addEventListener('click', ()=>{
        masterplay.classList.remove("fa-play");
        masterplay.classList.add("fa-pause");
        songname.innerText="Blank space"
-    
+       audioelement1.pause();
+   audioelement2.pause();
+   audioelement4.pause();
+   audioelement5.pause();
+   audioelement6.pause();
+   audioelement7.pause();
+   container[0].style.backgroundImage="url('https://i.ytimg.com/vi/e-ORhEE9VVg/maxresdefault.jpg')"
       }
        
      else {audioelement3.pause();
@@ -170,7 +193,13 @@ song1.addEventListener('click', ()=>{
          masterplay.classList.remove("fa-play");
          masterplay.classList.add("fa-pause");
          songname.innerText="Blinding lights"
-      
+         audioelement1.pause();
+   audioelement2.pause();
+   audioelement3.pause();
+   audioelement5.pause();
+   audioelement6.pause();
+   audioelement7.pause();
+   container[0].style.backgroundImage="url('https://townsquare.media/site/812/files/2021/03/the-weeknd-blinding-lights-lyrics-header.jpg?w=1200')"
         }
          
        else {audioelement4.pause();
@@ -192,7 +221,13 @@ song1.addEventListener('click', ()=>{
            masterplay.classList.remove("fa-play");
            masterplay.classList.add("fa-pause");
            songname.innerText="Poker Face"
-        
+           audioelement1.pause();
+   audioelement2.pause();
+   audioelement4.pause();
+   audioelement3.pause();
+   audioelement6.pause();
+   audioelement7.pause();
+   container[0].style.backgroundImage="url('https://i.ytimg.com/vi/5JHMvtiWnRo/maxresdefault.jpg')"
           }
            
          else {audioelement5.pause();
@@ -224,7 +259,13 @@ song1.addEventListener('click', ()=>{
              masterplay.classList.remove("fa-play");
              masterplay.classList.add("fa-pause");
              songname.innerText="Shape of You"
-          
+             audioelement1.pause();
+   audioelement2.pause();
+   audioelement4.pause();
+   audioelement5.pause();
+   audioelement3.pause();
+   audioelement7.pause();
+   container[0].style.backgroundImage="url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/201708/edstory_647_080517123715.jpg?VersionId=lcLUQCMmih7yBfLY3Y62QI2f0bs9RIqS')"
             }
              
            else {audioelement6.pause();
@@ -260,7 +301,13 @@ song1.addEventListener('click', ()=>{
                masterplay.classList.remove("fa-play");
                masterplay.classList.add("fa-pause");
                songname.innerText="On The Floor"
-            
+               audioelement1.pause();
+               audioelement2.pause();
+               audioelement4.pause();
+               audioelement5.pause();
+               audioelement6.pause();
+               audioelement3.pause();
+               container[0].style.backgroundImage="url('https://upload.wikimedia.org/wikipedia/en/9/91/On_the_Floor.png')"
               }
                
              else {audioelement7.pause();
@@ -275,6 +322,7 @@ song1.addEventListener('click', ()=>{
                   audioelement1.pause();
                   audioelement2.play();
                   songname.innerText="Faded"
+                  container[0].style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCL6nHRv-5XRaicmNfM9deudGLm78niEANXw&usqp=CAU')"
                 }
                   
 
@@ -282,28 +330,33 @@ song1.addEventListener('click', ()=>{
                     audioelement2.pause();
                     audioelement3.play();
                     songname.innerText="Blank Space"
+                    container[0].style.backgroundImage="url('https://i.ytimg.com/vi/e-ORhEE9VVg/maxresdefault.jpg')"
                   }
 
                    else if(!audioelement3.paused){
                       audioelement3.pause();
                       audioelement4.play();
-                      songname.innerText="Blinding Lights"}
+                      songname.innerText="Blinding Lights"
+                      container[0].style.backgroundImage="url('https://townsquare.media/site/812/files/2021/03/the-weeknd-blinding-lights-lyrics-header.jpg?w=1200')"}
 
 
                       else if(!audioelement4.paused){
                         audioelement4.pause();
                         audioelement5.play();
-                        songname.innerText="Poker Face"}
+                        songname.innerText="Poker Face"
+                        container[0].style.backgroundImage="url('https://i.ytimg.com/vi/5JHMvtiWnRo/maxresdefault.jpg')"}
 
                         else if(!audioelement5.paused){
                           audioelement5.pause();
                           audioelement6.play();
-                          songname.innerText="Shape of You"}
+                          songname.innerText="Shape of You"
+                          container[0].style.backgroundImage="url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/201708/edstory_647_080517123715.jpg?VersionId=lcLUQCMmih7yBfLY3Y62QI2f0bs9RIqS')"}
 
                           else if(!audioelement6.paused){
                             audioelement6.pause();
                             audioelement7.play();
-                            songname.innerText="On the Floor"}
+                            songname.innerText="On the Floor"
+                            container[0].style.backgroundImage="url('https://upload.wikimedia.org/wikipedia/en/9/91/On_the_Floor.png')"}
 
                 
 
@@ -318,6 +371,7 @@ song1.addEventListener('click', ()=>{
                     audioelement7.pause();
                     audioelement6.play();
                     songname.innerText="Shape of You"
+                    container[0].style.backgroundImage="url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/201708/edstory_647_080517123715.jpg?VersionId=lcLUQCMmih7yBfLY3Y62QI2f0bs9RIqS')"
                   }
                     
   
@@ -325,29 +379,43 @@ song1.addEventListener('click', ()=>{
                       audioelement6.pause();
                       audioelement5.play();
                       songname.innerText="Poker Face"
+                      container[0].style.backgroundImage="url('https://i.ytimg.com/vi/5JHMvtiWnRo/maxresdefault.jpg')"
                     }
   
                      else if(!audioelement5.paused){
                         audioelement5.pause();
                         audioelement4.play();
-                        songname.innerText="Blinding Lights"}
+                        songname.innerText="Blinding Lights"
+                        container[0].style.backgroundImage="url('https://townsquare.media/site/812/files/2021/03/the-weeknd-blinding-lights-lyrics-header.jpg?w=1200')"}
   
   
                         else if(!audioelement4.paused){
                           audioelement4.pause();
                           audioelement3.play();
-                          songname.innerText="Blank Space"}
+                          songname.innerText="Blank Space"
+                          container[0].style.backgroundImage="url('https://i.ytimg.com/vi/e-ORhEE9VVg/maxresdefault.jpg')"}
   
                           else if(!audioelement3.paused){
                             audioelement3.pause();
                             audioelement2.play();
-                            songname.innerText="Faded"}
+                            songname.innerText="Faded"
+                            container[0].style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCL6nHRv-5XRaicmNfM9deudGLm78niEANXw&usqp=CAU')"}
   
                             else if(!audioelement2.paused){
                               audioelement2.pause();
                               audioelement1.play();
-                              songname.innerText="Legends Never Die"}
+                              songname.innerText="Legends Never Die"
+                              container[0].style.backgroundImage="url('https://esports.as.com/2017/09/25/league-of-legends/cancion-Legends-Never-Die-Mundial_1066403360_205187_1440x810.jpg')"}
+
+                              
   
                   
   
+                  })
+
+                  masterplay.addEventListener('click', ()=>{
+                    if(audioelement1.played){
+                      audioelement1.pause
+                    }
+                    else{audioelement1.play()}
                   })

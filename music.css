@@ -15,16 +15,19 @@ nav{
 
 
 nav li{
+  cursor: pointer;
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 5px;
+  margin: 0;
  
 }
 
 nav ul{
-  
+  cursor: pointer;
   height: 70px;
   color: rgb(13, 24, 24);
+  margin: 0;
   display: flex;
   list-style: none;
   padding:0 10px
@@ -55,9 +58,11 @@ h1{
 }
 
 .container{
+  background-image: 75%;
 height: 75%;
 background-image: url("https://esports.as.com/2017/09/25/league-of-legends/cancion-Legends-Never-Die-Mundial_1066403360_205187_1440x810.jpg");
 margin-top: 0px;
+
 }
 
 #play{
@@ -70,6 +75,8 @@ i{
   color: white;
   cursor: pointer;
   size: 1;
+  margin: 0px 2px;
+  padding: 0;
 }
 
 #play{
@@ -91,7 +98,7 @@ i{
   margin-top: 0px;
 }
 #icons{
-  margin-top: 6px;
+  margin-top: 0px;
 }
 
 .songs{
