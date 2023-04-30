@@ -156,7 +156,7 @@ song1.addEventListener('click', ()=>{
        flag=1;
        masterplay.classList.remove("fa-play");
        masterplay.classList.add("fa-pause");
-       songname.innerText="Bad guy"
+       songname.innerText="Bad guy";
        audioelement1.pause();
    audioelement2.pause();
    audioelement4.pause();

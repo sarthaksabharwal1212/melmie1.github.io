@@ -7,6 +7,10 @@ body{
   
 }
 
+a{
+  text-decoration: none;
+}
+
 nav{
   background-color: lightgreen;
   margin-bottom: 0px;
